@@ -1,0 +1,301 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #0B0C0D;
+    margin: 0 50px ;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+header, nav {
+    animation: start 0.5s ease-in-out forwards;
+}
+
+@keyframes start {
+    from { transform: translate(0, -10px); opacity: 0;}
+    to { transform: translate(0, 0px); opacity: 1;}
+}
+
+.main-img {
+    animation: imgstart 0.5s ease-in-out 0.2s forwards;
+}
+
+@keyframes imgstart {
+    from { transform: translate(0, 10px); opacity: 0;}
+    to { transform: translate(0, 0px); opacity: 1;}
+}
+
+.text {
+    animation: imgstart 0.5s ease-in-out 0.4s forwards;
+}
+
+header {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    opacity: 0;
+}
+
+/*
+.hb-menu-icon {
+    width:30px;
+    height: fit-content;
+    align-self: center;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.top {
+    height:2px;
+    background-color: black;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.middle {
+    width: 60%;
+    height:2px;
+    background-color: black;
+    margin-bottom: 5px;
+    transition: var(--main-duration) ;
+    background-color: white;
+}
+
+.bottom {
+    height:2px;
+    background-color: black;
+    background-color: white;
+}
+*/
+
+.logo a svg {
+    filter: invert(100%);
+    transform: scale(1.5);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    color: #656D78;
+}
+
+.nav-links li {
+    margin: 15px;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #656D78;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-links li a:hover {
+    transition: 0.2s ease-in-out;
+    color: white;
+
+}
+
+.social {
+    position: absolute;
+    right: 0px;
+    margin: 40px;
+}
+
+.social ul li {
+    margin: 15px;
+    transform: scale(1.1);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+    margin: 0;
+}
+
+.main-img {
+    width: 70vw;
+    height: 70vh;
+    background-image: url("https://oliur.com/wp-content/uploads/2020/08/oliur-profile-shot.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0
+}
+
+.text {
+    color: white;
+    width: 70vw;
+    text-align: center;
+    font-weight: 700;
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.newsletter div:nth-child(1)  {
+    transform: scale(1.2);
+}
+
+.newsletter form input {
+    color: white;
+    background-color: #656d78a3;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    height: 5vh;
+    width: 12vw;
+    font-weight: 700;
+
+}
+
+.newsletter form button {
+    color: white;
+    background-color: #656d78;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    height: 5vh;
+    width: 12vw;
+    font-weight: 700;
+}
+
+.newsletter a {
+    margin-top: 10px;
+    display: block;
+    color: white;
+    font-weight:700;
+    text-decoration: none;
+    transform: scale(0.7);
+}
+
+.creating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: fit-content;
+    transform: scale(0.8);
+}
+
+.creating h2 {
+    color: #656d78;
+}
+
+.creating img {
+    width: 40vw;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+.content p {
+    color: #656d78;
+}
+
+img {
+    transition: 0.3s ease-in-out
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.cr {
+    text-align: center;
+    color: #656D78;
+    transform: translate(0 ,150px) ;
+}
+
+.h-blog {
+    text-align: center;
+    color: #656D78;
+    transform: translate(0 ,-100px) ;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post {
+    width: 40vw;
+    height: fit-content;
+    transform: translate(3vw, 0);
+    justify-self: center;
+}
+
+.post img {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.post img:hover {
+    transform: scale(1.05);
+}
+
+.post p {
+    color: #656D78;
+    width: 30vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h4 {
+    color: #656D78;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #656D78;
+}
